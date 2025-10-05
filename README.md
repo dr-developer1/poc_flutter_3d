@@ -269,5 +269,5 @@ This project is for educational purposes.
 
 ---
 
-**Made by dr-developer1** | **October 2025**
+**Made by Dr Developer** | **October 2025**
 
