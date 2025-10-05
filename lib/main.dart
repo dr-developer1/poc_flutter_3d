@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/solar_system_explorer_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +10,19 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Solar System Explorer',
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: Colors.black,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black,
+          foregroundColor: Colors.white,
         ),
+        useMaterial3: true,
       ),
+      home: const SolarSystemExplorerScreen(),
     );
   }
 }
